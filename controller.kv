@@ -1,0 +1,321 @@
+#:kivy 1.4
+Bochron:
+	orientation: 'vertical'
+	canvas.before:
+        Color:
+            rgb: .6, .6, .6
+        Rectangle:
+            size: self.size
+            source: 'images/background.png'
+			
+
+	ScreenManager: 
+		id: sm
+		
+		Screen:
+			name: 'server_connect'
+		
+			BoxLayout:
+				id: kv_server
+				pos_hint: {'x': .1, 'y': .5}
+				size_hint_x: .8
+				size_hint_y: None
+				
+				orientation: 'vertical'
+				spacing: 5
+					
+			
+				TextInput:
+					id: kv_server_adress
+					size_hint_x: 1
+					size_hint_y: None
+					height: '50dp'
+					font_size: "30dp"
+					hint_text: "Server Adress: z.B. bigwood.de"
+					multiline: False
+					on_text_validate: root.bochron_connect(kv_server_adress.text)
+					
+					
+				Button:
+					text: "Connect"
+					size_hint_x: 1
+					size_hint_y: None
+					height: '50dp'
+				
+					on_release: root.bochron_connect(kv_server_adress.text)
+		
+		
+		
+		
+		Screen:
+			name: 'login_user'
+		
+			GridLayout:
+				id: kv_user_list
+				pos_hint: {'x': .1, 'y': .5}
+				size_hint_x: .8
+				size_hint_y: None
+				cols: 4
+				spacing: 5
+						
+				
+							
+							
+		Screen:
+			name: 'login_auth'
+			
+		
+			BoxLayout:
+				id: kv_login_list
+				pos_hint: {'x': .1, 'y': .5}
+				size_hint_x: .8
+				size_hint_y: None
+				orientation: 'vertical'
+				spacing: 5
+				
+				Button:
+					id: kv_user_label
+					size_hint_y: None
+					height: '50dp'
+					font_size: "30dp"
+					on_release: sm.current = 'login_user'
+					
+				
+					
+				TextInput:
+					id: kv_password_input
+					size_hint_y: None
+					height: '50dp'
+					
+					text: 
+					password: True
+					multiline: False
+					font_size: "30dp"
+					
+					on_text_validate: root.bochron_login_auth(kv_password_input.text)
+					
+				Button:
+					id: kv_login_button
+					size_hint_y: None
+					height: '50dp'
+					text: 'login'
+					on_release: root.bochron_login_auth(kv_password_input.text)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		Screen:
+			name: 'view_projekts'
+			
+			Button:
+				text: "Add"
+				size_hint: .2, .2
+				pos_hint: {'x': .8, 'y': .8}
+				on_release: sm.current = "add_projekt"
+				
+			Button:
+				text: "Edit\nDelete"
+				size_hint: .2, .2
+				pos_hint: {'x': .8, 'y': .6}
+				
+					
+			Button:
+				id: test
+				text: "History"
+				size_hint: .2, .2
+				pos_hint: {'x': .8, 'y': .4}
+				on_press: root.get_history()
+				on_release: sm.current = 'view_history'
+				
+			Button:
+				id: kv_user_button
+				text: "load user"
+				size_hint: .2, .2
+				pos_hint: {'x': .8, 'y': .2}
+				
+				on_press: root.bochron_logout_change()
+				on_release: sm.current = 'login_user'
+				
+				
+				
+			Button:
+				id: logout_button
+				text: "Logout\n&\nExit"
+				size_hint: .2, .2
+				pos_hint: {'x': .8, 'y': .0}
+				on_release: root.bochron_logout()
+				
+			ScrollView:
+				size_hint: .8, 1
+				pos_hint: {'x': 0, 'y': .0}
+				scroll_timeout: 100
+				scroll_distance: 20
+				GridLayout:
+					id: recorder_box
+					padding: 10
+					spacing: 5
+					cols: 3
+					size_hint: 1, 1.5
+					row_default_height: (self.width / 4)
+					
+				
+		
+		Screen:
+			name: 'add_projekt'	
+			
+			ScrollView:
+				size_hint: 1, .85
+				pos_hint: {'x': 0, 'y': .15}
+				scroll_timeout: 100
+				scroll_distance: 20
+			
+				GridLayout:
+					id: add_rec_box
+					padding: 10
+					spacing: 5
+					cols: 1
+					size_hint: 1, 1.5
+					row_default_height: '40dp'
+					
+					TextInput:
+						id: add_rec_title
+						size_hint: 1, None
+						hint_text: 'Title...'
+				
+					TextInput:
+						id: add_rec_description
+						size_hint: 1, None
+						hint_text: 'Beschreibung...'
+				
+					Button:
+						text: "Add"
+						size_hint: 1, 0.15
+						size_hint: 1, None
+						on_release: root.add_recorder()
+				
+			Button:
+				text: "Back"
+				size_hint: 1, 0.15
+				pos_hint: {'x': 0, 'y': .0}
+				on_release: sm.current = "view_projekts"
+			
+		Screen:
+			name: 'view_history'	
+			
+			ScrollView:
+				size_hint: 1, .85
+				pos_hint: {'x': 0, 'y': .15}
+				scroll_timeout: 100
+				scroll_distance: 20
+			
+				GridLayout:
+					id: history_box
+					padding: 10
+					spacing: 5
+					cols: 1
+					size_hint_x: 1
+					size_hint_y: 5
+					
+					row_default_height: '40dp'
+					
+						
+				
+			Button:
+				text: "Back"
+				size_hint: 1, .15
+				pos_hint: {'x': 0, 'y': 0}
+				on_release: sm.current = "view_projekts"
+				
+		Screen:
+			name: 'edit_history'	
+			
+			ScrollView:
+				size_hint: 1, .7
+				pos_hint: {'x': 0, 'y': .3}
+				scroll_timeout: 100
+				scroll_distance: 20
+			
+				GridLayout:
+					id: edit_history_box
+					padding: 10
+					spacing: 5
+					cols: 1
+					size_hint: 1, 1.5
+					row_default_height: '40dp'
+					
+			
+					
+				
+			Button:
+				text: "Update"
+				size_hint: 1, 0.15
+				pos_hint: {'x': 0, 'y': .15}
+				on_release: root.update_history_record()
+				
+			Button:
+				text: "Back"
+				size_hint: 1, 0.15
+				pos_hint: {'x': 0, 'y': .0}
+				on_release: sm.current = "view_history"				
+			
+			
+<UserSelectButton>:
+	size_hint_y: None
+	height: '50dp'
+	width: 50
+	on_release: app.root.bochron_login(self.text,'')	
+	
+<DateTimeSlider0>:
+	id: slider
+	size_hint: 1, None
+	#pos_hint: {'x': 0, 'y': .25}
+	min: -43200
+	max: 43200
+	#value: 0
+	on_value: app.root.add_rem_datetime0(self.value)
+	
+<DateTimeSlider1>:
+	id: slider
+	size_hint: 1, None
+	#pos_hint: {'x': 0, 'y': .25}
+	min: -43200
+	max: 43200
+	#value: 0
+	on_value: app.root.add_rem_datetime1(self.value)	
+	
+	
+<RecorderFloatLayout>:
+	size_hint: .2, None
+	
+			
+	Button:
+		text: "test"
+		size_hint: 1, 1
+		pos_hint: {'x': 0, 'y': 0}
+		#font_size: 20
+		background_normal: ''
+		background_color: .6,.6,.8,1
+		on_release: root.rec_start_stop()
+		
+	Label:
+		text: "Kunde"
+		pos_hint: {'x': -.25, 'y': .30}
+		
+	Label:
+		id: counter
+		text: '1'
+		pos_hint: {'x': .20, 'y': -.30}		
+		
+		
+<RecorderButton>:
+	on_release: app.root.rec_start_stop(self.id)	
+	
+	
+<HistoryButton>:
+	on_press: app.root.get_history_record(self.id)
+	on_release: app.root.ids.sm.current = 'edit_history'

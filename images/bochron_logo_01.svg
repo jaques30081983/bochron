@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="bochron_logo_01.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3794">
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1;"
+         offset="0"
+         id="stop3796" />
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1"
+         offset="1"
+         id="stop3798" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3764">
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1;"
+         offset="0"
+         id="stop3766" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3768" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3764"
+       id="linearGradient3774"
+       x1="305.71429"
+       y1="355.8692"
+       x2="201.53732"
+       y2="35.869186"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.94011318,0,0,1,26.177526,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3794"
+       id="linearGradient3800"
+       x1="360"
+       y1="236.64789"
+       x2="392.85715"
+       y2="390.93362"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3794"
+       id="linearGradient3866"
+       gradientUnits="userSpaceOnUse"
+       x1="360"
+       y1="236.64789"
+       x2="392.85715"
+       y2="390.93362" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3794"
+       id="linearGradient3877"
+       gradientUnits="userSpaceOnUse"
+       x1="360"
+       y1="236.64789"
+       x2="392.85715"
+       y2="390.93362" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="325"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3868"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="1000"
+     inkscape:window-x="1280"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient3774);fill-opacity:1;stroke:none"
+       id="rect2991"
+       width="291.53732"
+       height="298.70032"
+       x="212.85715"
+       y="66.51902"
+       ry="10"
+       rx="9.999999"
+       inkscape:export-filename="/home/jaques2/workspace/bochron/images/bchron_logo_01.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3868"
+       transform="translate(2.911004,7.5489489)"
+       inkscape:export-filename="/home/jaques2/workspace/bochron/images/bchron_logo_01.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2987"
+         y="339.0683"
+         x="220.6042"
+         style="font-size:52.78104019px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="/home/jaques2/workspace/bochron/images/bchron_logo_01.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Square721 BT;-inkscape-font-specification:Square721 BT"
+           y="339.0683"
+           x="220.6042"
+           id="tspan2989"
+           sodipodi:role="line">BOCHRON</tspan></text>
+      <g
+         transform="translate(1.4620805,0)"
+         id="g3858"
+         inkscape:export-filename="/home/jaques2/workspace/bochron/images/bchron_logo_01.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <path
+           sodipodi:type="arc"
+           style="fill:url(#linearGradient3877);fill-opacity:1;stroke:none"
+           id="path2985"
+           sodipodi:cx="380"
+           sodipodi:cy="341.64789"
+           sodipodi:rx="145.71428"
+           sodipodi:ry="142.14285"
+           d="m 525.71428,341.64789 c 0,78.50333 -65.23851,142.14285 -145.71428,142.14285 -80.47577,0 -145.71428,-63.63952 -145.71428,-142.14285 0,-78.50333 65.23851,-142.14285 145.71428,-142.14285 80.47577,0 145.71428,63.63952 145.71428,142.14285 z"
+           transform="matrix(0.76190634,0,0,0.76188581,64.728315,-74.89179)" />
+        <rect
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2994-4-6"
+           width="30.398346"
+           height="31.766462"
+           x="342.06494"
+           y="98.621796"
+           rx="9.999999"
+           ry="10.000001" />
+        <rect
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2994-4-6-0"
+           width="41.349731"
+           height="38.909321"
+           x="389.08658"
+           y="127.90752"
+           rx="9.999999"
+           ry="10.000001" />
+        <rect
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2994-4-6-9"
+           width="26.281282"
+           height="27.480751"
+           x="341.11209"
+           y="171.66451"
+           rx="9.999999"
+           ry="10.000002" />
+      </g>
+    </g>
+  </g>
+</svg>
