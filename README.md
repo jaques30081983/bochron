@@ -1,6 +1,7 @@
 # bochron
-A simple time record app
+A simple time record app.
 
+The App is written in python with kivy, the backend in PHP with MySql.
 
 ![bochron](images/bochron_logo_01.png)
 
